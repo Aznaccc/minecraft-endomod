@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "endomod:gladier_block"
+    }
+  ],
+  "result": {
+    "item": "endomod:gladier",
+    "count": 9
+  }
+}

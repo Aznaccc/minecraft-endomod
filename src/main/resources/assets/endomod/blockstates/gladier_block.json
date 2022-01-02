@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "endomod:block/gladier_block" }
+  }
+}

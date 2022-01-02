@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "endomod:gladier"
+    }
+  },
+  "result": {
+    "item": "endomod:gladier_helmet"
+  }
+}

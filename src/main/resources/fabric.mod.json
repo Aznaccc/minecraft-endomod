@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "endomod",
+  "version": "${version}",
+
+  "name": "Endo mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "4znac"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.aznac.endomod.AznacMod"
+    ]
+  },
+  "mixins": [
+    "endomod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
