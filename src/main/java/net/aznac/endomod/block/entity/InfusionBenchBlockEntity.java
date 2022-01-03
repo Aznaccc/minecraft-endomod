@@ -2,6 +2,7 @@ package net.aznac.endomod.block.entity;
 
 import net.aznac.endomod.item.ModItems;
 import net.aznac.endomod.item.inventory.ImplementedInventory;
+import net.aznac.endomod.screen.InfusionBenchScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.EntityType;
@@ -38,7 +39,8 @@ public class InfusionBenchBlockEntity extends BlockEntity implements  NamedScree
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
-        return null;
+
+        return new InfusionBenchScreenHandler(syncId, inv, this);
     }
 
     @Override

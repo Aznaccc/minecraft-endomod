@@ -37,9 +37,6 @@ public class InfusionBenchScreenHandler extends ScreenHandler {
         addPlayerHotbar(playerInventory);
     }
 
-    protected InfusionBenchScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId) {
-        super(type, syncId);
-    }
 
     @Override
     public boolean canUse(PlayerEntity player) {
