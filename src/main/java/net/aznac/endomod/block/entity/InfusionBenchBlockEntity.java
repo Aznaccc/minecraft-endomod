@@ -25,7 +25,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class InfusionBenchBlockEntity extends BlockEntity implements  NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
-            DefaultedList.ofSize(3, ItemStack.EMPTY);
+            DefaultedList.ofSize(5, ItemStack.EMPTY);
 
     public InfusionBenchBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.INFUSION_BENCH_BLOCK_ENTITY, pos, state);
@@ -79,8 +79,8 @@ public class InfusionBenchBlockEntity extends BlockEntity implements  NamedScree
     private static boolean hasRecipe(InfusionBenchBlockEntity entity) {
         boolean hasItemInFirstSlot = entity.getStack(0).getItem() == ModItems.GLADIER_AXE;
         boolean hasItemInSecondSlot = entity.getStack(1).getItem() == Items.BLAZE_POWDER;
-        boolean hasItemInThirdSlot = entity.getStack(1).getItem() == Items.BLAZE_POWDER;
-        boolean hasItemInFourthSlot = entity.getStack(1).getItem() == Items.NETHER_WART;
+        boolean hasItemInThirdSlot = entity.getStack(2).getItem() == Items.BLAZE_POWDER;
+        boolean hasItemInFourthSlot = entity.getStack(3).getItem() == Items.NETHER_WART;
 
         return hasItemInFirstSlot && hasItemInSecondSlot && hasItemInThirdSlot && hasItemInFourthSlot;
     }

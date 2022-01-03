@@ -6,7 +6,7 @@
   "name": "Endo mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "4znac"
+    "Aznaccc"
   ],
   "contact": {
     "homepage": "",
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.aznac.endomod.AznacMod"
+    ],
+    "client": [
+      "net.aznac.endomod.AznacClientMod"
     ]
   },
   "mixins": [
