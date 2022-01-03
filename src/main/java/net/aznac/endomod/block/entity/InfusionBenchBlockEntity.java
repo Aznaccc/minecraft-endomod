@@ -39,7 +39,6 @@ public class InfusionBenchBlockEntity extends BlockEntity implements  NamedScree
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
-
         return new InfusionBenchScreenHandler(syncId, inv, this);
     }
 
